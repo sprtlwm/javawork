@@ -14,8 +14,11 @@ public class Car {
 	
 	//메소드
 	public int run(){
+		
 		System.out.println("[자동차가 달립니다.]");
+		
 		for(int i =0; i < tires.length; i++) {
+			
 			if(tires[i].roll() == false) {
 				stop();
 				return (i +1);
