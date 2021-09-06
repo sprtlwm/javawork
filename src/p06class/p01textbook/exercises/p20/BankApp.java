@@ -70,7 +70,7 @@ public class BankApp {
 					System.out.print(acc.getOwner());
 					System.out.print(" ");
 					System.out.print(acc.getBalance());
-					System.out.print(" ");
+					System.out.println(" ");
 		}
 	}
 }
@@ -89,11 +89,11 @@ public class BankApp {
 			
 			Account acc = findAccount(ano);
 			if(acc != null) {
-				System.out.println("결과: 계좌가 없습니다.");
-				return;
+				acc.setBalance(acc.getBalance()+ mon);
+				System.out.println("결과: 예금이 완료되었습니다.");
 			}
-			acc.setBalance(acc.getBalance()+ mon);
-			System.out.println("결과: 예금이 완료되었습니다.");
+			System.out.println("결과: 계좌가 없습니다.");
+			return;
 		}
 		
 		private static void withdrow() {
