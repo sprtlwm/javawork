@@ -2,12 +2,14 @@ package p08interface.p01textbook.exercises;
 
 public interface DataAccessObject {
 
-	void select();
+//public abstract ...
+	
+		void select();
 
-	void insert();
+		void insert();
 
-	void update();
-
-	void delete();
+		void update();
+		
+		void delete();
 
 }
