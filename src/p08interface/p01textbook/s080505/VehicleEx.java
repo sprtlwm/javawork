@@ -7,8 +7,9 @@ public class VehicleEx {
 		Vehicle vehicle = new Bus();
 		
 		vehicle.run();
+	  //vehicle.checkFare();
 		
 		Bus bus = (Bus) vehicle;
-		
+		bus.checkFare();
 	}
 }
