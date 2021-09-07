@@ -8,8 +8,11 @@ public class Example3Polymorphism {
 		
 		try {
 			int i = Integer.parseInt(a);
-		}catch(){
-			
+		}catch(Throwable e){
+			System.out.println("넘버..익셉션 발생");
+//			e. printStackTrace();
 		}
+		
+		System.out.println("프로그램 종료");
 	}
 }
