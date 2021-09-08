@@ -1,13 +1,13 @@
 package p10exception.p02quiz;
 
-public class Quiz6 {
+public class TextbookQuiz6 {
 
 	public static void main(String[] args) {
 		
 		String[] str = {"10", "2a"};
 		int val = 0; 
 		
-		for(int i = 0; i<2; i++) {
+		for(int i = 0; i<=2; i++) {
 			try {
 				val = Integer.parseInt(str[i]);
 			}catch(ArrayIndexOutOfBoundsException e) {
