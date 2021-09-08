@@ -1,5 +1,6 @@
 package p10exception.p02quiz;
 
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.InputMismatchException;
 
@@ -8,6 +9,11 @@ public class Example8 {
 			
 		InputStreamReader isr = new InputStreamReader(System.in);
 		
-		isr.closs();
+		try {
+			isr.close();
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+			
 	}
 }
