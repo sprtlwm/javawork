@@ -13,7 +13,15 @@ public class Ex01String {
 		System.out.println(s1.equals(s2));
 		System.out.println(s1.contentEquals(s2));
 		
+		String s3 = null;
 		
+		s3 = s1.substring(0,3);
+		
+		System.out.println(s3);
+		
+		String s4 = "";
+		s4 = s1.substring(0,3);
+		System.out.println(s4);
 		
 	}
 }
