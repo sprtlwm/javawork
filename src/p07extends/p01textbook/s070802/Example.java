@@ -1,6 +1,6 @@
 package p07extends.p01textbook.s070802;
 
-import p07extends.p01textbook.p03lecture.p01casting.Cat;
+import p07extends.p03lecture.p01casting.Cat;
 
 public class Example {
 	

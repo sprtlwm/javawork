@@ -1,4 +1,4 @@
-package p07extends.p01textbook.p03lecture.p01casting;
+package p07extends.p03lecture.p01casting;
 
 public class CatEx {
 
