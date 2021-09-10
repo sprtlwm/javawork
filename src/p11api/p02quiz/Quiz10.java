@@ -15,5 +15,18 @@ public class Quiz10 {
 		}else {
 			System.out.println("id를 사용할 수 없습니다.");
 		}
+	
+		
+	int sum = 0;
+	
+	for(int i = 1; i<=100; i++) {
+		if(i%3 == 0) {
+			
+			sum +=i;
+		}
 	}
+	System.out.println(sum);
+	}
+	
 }
+
