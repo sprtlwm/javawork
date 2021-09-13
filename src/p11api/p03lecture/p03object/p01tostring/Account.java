@@ -7,6 +7,8 @@ public class Account {
 	private int balance;
 
 	public Account(String ano, String owner, int balance) {
+		
+		super();
 		this.ano = ano;
 		this.owner = owner;
 		this.balance = balance;
@@ -31,9 +33,8 @@ public class Account {
 		this.balance = balance;
 	}
 	
-	public String toSting() {
-		return "계좌번호:" + this.ano + ", 계좌주:" + this.owner + ", 계약금:" + this.balance;
+	
+	public String toString() {
+		return "계좌번호:" + this.ano + ", 계좌주:" + this.owner + ", 잔액:" + this.balance + "원";
 	}
-	
-	
 }

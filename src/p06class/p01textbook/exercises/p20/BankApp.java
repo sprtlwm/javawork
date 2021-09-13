@@ -64,14 +64,15 @@ public class BankApp {
 		
 			for(int i = 0; i < arr.length; i++) {
 				Account acc = arr[i];
-				if(acc != null) {
-					System.out.print(acc.getAno());
-					System.out.print(" ");
-					System.out.print(acc.getOwner());
-					System.out.print(" ");
-					System.out.print(acc.getBalance());
-					System.out.println(" ");
-		}
+				System.out.println(arr[i]);
+//				if(acc != null) {
+//					System.out.print(acc.getAno());
+//					System.out.print(" ");
+//					System.out.print(acc.getOwner());
+//					System.out.print(" ");
+//					System.out.print(acc.getBalance());
+//					System.out.println(" ");
+//		}
 	}
 }
 		

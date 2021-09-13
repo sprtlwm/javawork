@@ -23,6 +23,8 @@ public class Account {
 	public int getBalance() {return balance;}
 	
 		
-	
+	public String toString() {
+		return ano + "   " + owner + "   " + balance;
+	}
 	
 }
