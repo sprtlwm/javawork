@@ -1,4 +1,4 @@
-package p12thread.p03lecture;
+package p12thread.p03lecture.p01thread;
 
 public class EX02 {
 	public static void main(String[] args) {
