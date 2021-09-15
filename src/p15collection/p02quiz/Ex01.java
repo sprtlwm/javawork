@@ -13,13 +13,24 @@ public class Ex01 {
 		boolean run = true;
 		
 		while(run) {
-			System.out.print("l : list, e : exit 입력>");
+			System.out.print("l : list, r : remove, e : exit 입력>");
 			String str = scan.nextLine();
 			
+//			 list.add(scan.nextLine());
+//			String exit = scan.next();
+//			if(exit.equals('e')) {
+//				break;
+//			}
 			switch (str) {
 			case "l":
 				for(String s : list) {
 					System.out.println(s);
+				}
+				break;
+			case "r":
+//				list.remove(list.size()-1);
+				if(!list.isEmpty()) {
+					list.remove(list.size()-1);
 				}
 				break;
 			case "e":
@@ -29,11 +40,6 @@ public class Ex01 {
 				list.add(str);
 				break;
 			}
-//			 list.add(scan.nextLine());
-//			String exit = scan.next();
-//			if(exit.equals('e')) {
-//				break;
-//			}
 			 
 		}
 		
