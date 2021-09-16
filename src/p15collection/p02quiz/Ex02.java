@@ -1,6 +1,7 @@
 package p15collection.p02quiz;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -37,13 +38,22 @@ public class Ex02 {
 				
 				break;
 			case 3:
+				
 				if(!list.isEmpty()) {
 				for(int i2 : list) {
 					sum +=i2;
 				}
-				double i3 = sum/ list.size();
+				double i3 = sum/ (double) list.size();
 				System.out.println("합:" + sum + "평균:" + i3);
+				
+				int max = max(list);
+				int min = min(list);
+				
+				System.out.println("최대값 : " + max);
+				System.out.println("최소값 : " + min);
+				
 				}
+				
 				break;
 				
 			default:
@@ -52,16 +62,39 @@ public class Ex02 {
 				}
 				break;
 			}
-			
-			
-		}
-		
-		
-		
-		
-		
-		
-		
+		}	
 		scan.close();
+	}
+
+
+	private static int max(List<Integer> list) {
+		if(list.isEmpty()){
+		return 0;
+	}
+		int max = list.get(0);
+		for(int i = 1; i <list.size(); i++) {
+			if(max < list.get(i)) {
+				max = list.get(i);
+			}
+		}
+	return max;
+	}
+	
+	private static int min(List<Integer> list) {
+		if(list.isEmpty()) {
+			return 0;			
+		}
+		int min = Integer.MAX_VALUE;
+		
+		for( int item : list) {
+			min = Math.min(min, item);
+		}
+//		int min = list.get(0);
+//		for(int i = 1; i < list.size(); i++) {
+//			if(min > list.get(i)) {
+//				min =list.get(i);
+//			}
+//		}
+		return min;
 	}
 }
