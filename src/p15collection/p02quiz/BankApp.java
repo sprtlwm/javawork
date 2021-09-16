@@ -1,13 +1,17 @@
-package p06class.p01textbook.exercises.p20;
+package p15collection.p02quiz;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import p06class.p01textbook.exercises.p20.Account;
 
 public class BankApp {
 
 	// Account객체를 아이템으로 갖을 수 있음.
 		// 참조타입이 아이템일 경우 null 초기화됨.
-		private static Account[] accountArray = new Account[100];
-		private static int size = 0;
+//		private static Account[] accountArray = new Account[100];
+//		private static int size = 0;
+		private static ArrayList<Account> accountArray = new ArrayList<>();
 		private static Scanner scanner = new Scanner(System.in);
 
 		public static void main(String[] args) {
@@ -52,8 +56,10 @@ public class BankApp {
 			int balance = scanner.nextInt();
 			
 			Account account = new Account(ano, owner, balance);
-			accountArray[size] = account;
-			size++;
+//			accountArray[size] = account;
+//			size++;
+			
+			accountArray.add(account);
 			
 			System.out.println("결과: 계좌가 생성되었습니다.");
 			
@@ -64,8 +70,8 @@ public class BankApp {
 			System.out.println("계좌목록");
 			System.out.println("---------------");
 			
-			for (int i = 0; i < size; i++) {
-				System.out.println(accountArray[i]);
+			for (int i = 0; i < accountArray.size(); i++) {
+				System.out.println(accountArray.get(i));
 				/*
 				System.out.print(accountArray[i].getAno() + "   ");
 				System.out.print(accountArray[i].getOwner() + "   ");
@@ -118,9 +124,9 @@ public class BankApp {
 		}
 		
 		private static Account findAccount(String ano) {
-			for (int i = 0; i < size; i++) {
-				if (accountArray[i].getAno().equals(ano)) {
-					return accountArray[i];
+			for (int i = 0; i < accountArray.size(); i++) {
+				if (accountArray.get(i).getAno().equals(ano)) {
+					return accountArray.get(i);
 				}
 			}
 			
