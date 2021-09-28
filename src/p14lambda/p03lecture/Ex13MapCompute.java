@@ -12,8 +12,6 @@ public class Ex13MapCompute {
 		for(Character c : s.toCharArray()) {
 			res.compute(c,(k ,v) -> v == null ? 1 : v + 1);
 		}
-		
 		return res;
 	}
-	
 }
